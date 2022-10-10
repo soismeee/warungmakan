@@ -1,0 +1,1 @@
+Rp. {{ number_format($data->uang_kembali-$data->total_bayar, 0, ',', '.') }}

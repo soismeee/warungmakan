@@ -1,0 +1,1 @@
+{{ date('d M Y', strtotime($data->tanggal)) }}
