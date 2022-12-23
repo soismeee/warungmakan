@@ -138,7 +138,7 @@
     <script src="{{ asset('assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
 
     <!-- Datatable init js -->
-    <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script> --}}
     <script>
         $(document).ready(function () {
             loaddata();
@@ -214,7 +214,6 @@
                 data: data,
                 dataType: 'json',
                 success: function (response){
-                    console.log(response);
                     if (response.status == 401) {
                         $.each(response.errors, function(key, err_values){
                             $('.input').addClass('has-validation');
@@ -273,7 +272,6 @@
             success: function (response){
                 if (response.status == 404) {
                     $.each(response.errors, function(key, err_values){
-                        console.log(response);
                         $('.input').addClass('has-validation');
                         $('#success_message').addClass('alert alert-warning');
                         $('#success_message').text(response.errors);

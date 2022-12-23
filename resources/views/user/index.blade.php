@@ -117,7 +117,7 @@
     <script src="{{ asset('assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
 
     <!-- Datatable init js -->
-    <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script> --}}
         
     <script>
         $(document).ready(function () {
@@ -150,7 +150,6 @@
             data: data,
             dataType: 'json',
             success: function (response){
-                console.log(response);
                 if (response.status == 401) {
                     $.each(response.errors, function(key, err_values){
                         $('.input').addClass('has-validation');
@@ -174,7 +173,6 @@
         var id = $(this).val();
         $('#update-pengguna').show();
         $('#add-pengguna').hide();
-        // console.log(id);
         $.ajax({
             type: "GET",
             url: "{{ route('usr.index') }}/"+id,
@@ -203,7 +201,6 @@
             success: function (response){
                 if (response.status == 404) {
                     $.each(response.errors, function(key, err_values){
-                        console.log(response);
                         $('.input').addClass('has-validation');
                         $('#success_message').addClass('alert alert-warning');
                         $('#success_message').text(response.errors);
@@ -247,7 +244,6 @@
                 $('#modalHapus').modal('hide');
                 $('.success_message').addClass('alert alert-success');
                 $('.success_message').html('Data pengguna berhasil dihapus <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="mdi mdi-close"></i></span></button>');
-                // $('.success_message').text(response.message);
                 $('#data-table').DataTable().ajax.reload();
             }
         });

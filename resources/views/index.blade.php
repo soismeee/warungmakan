@@ -59,9 +59,7 @@
                                         <h4>Rp. {{ number_format($bulanan, 0, ',', '.') }}</h4>
                                     </div>
                                     <div dir="ltr" class="ml-2">
-                                        <input data-plugin="knob" data-width="56" data-height="56" data-linecap=round data-displayInput=false
-                                        data-fgColor="#3051d3" value="56" data-skin="tron" data-angleOffset="56"
-                                        data-readOnly=true data-thickness=".17" />
+                                        <input data-plugin="knob" data-width="56" data-height="56" data-linecap=round data-displayInput=false data-fgColor="#3051d3" value="56" data-skin="tron" data-angleOffset="56" data-readOnly=true data-thickness=".17" />
                                     </div>
                                 </div>
                                 <hr>
@@ -78,48 +76,47 @@
                             </div>
                         </div>
 
-                            <div class="card">
-                                <div class="card-header bg-transparent p-3">
-                                    <h5 class="header-title mb-0">Rekap Laporan Bulanan</h5>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        <div class="media my-2">
-                                            
-                                            <div class="media-body">
-                                                <p class="text-muted mb-2">Pendapatan</p>
-                                                <h5 class="mb-0">Rp. {{ number_format($pendapatan, 0, ',', '.') }}</h5>
-                                            </div>
-                                            <div class="icons-lg ml-2 align-self-center">
-                                                <i class="uim uim-layer-group"></i>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="media my-2">
-                                            <div class="media-body">
-                                                <p class="text-muted mb-2">Laba </p>
-                                                <h5 class="mb-0">Rp. {{ number_format($laba, 0, ',', '.') }}</h5>
-                                            </div>
-                                            <div class="icons-lg ml-2 align-self-center">
-                                                <i class="uim uim-analytics"></i>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="media my-2">
-                                            <div class="media-body">
-                                                <p class="text-muted mb-2">Belanja</p>
-                                                <h5 class="mb-0">Rp. {{ number_format($belanja, 0, ',', '.') }}</h5>
-                                            </div>
-                                            <div class="icons-lg ml-2 align-self-center">
-                                                <i class="uim uim-box"></i>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                        <div class="card">
+                            <div class="card-header bg-transparent p-3">
+                                <h5 class="header-title mb-0">Rekap Laporan Bulanan</h5>
                             </div>
-                        
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="media my-2">
+                                        
+                                        <div class="media-body">
+                                            <p class="text-muted mb-2">Pendapatan</p>
+                                            <h5 class="mb-0">Rp. {{ number_format($pendapatan, 0, ',', '.') }}</h5>
+                                        </div>
+                                        <div class="icons-lg ml-2 align-self-center">
+                                            <i class="uim uim-layer-group"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="media my-2">
+                                        <div class="media-body">
+                                            <p class="text-muted mb-2">Laba </p>
+                                            <h5 class="mb-0">Rp. {{ number_format($laba, 0, ',', '.') }}</h5>
+                                        </div>
+                                        <div class="icons-lg ml-2 align-self-center">
+                                            <i class="uim uim-analytics"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="media my-2">
+                                        <div class="media-body">
+                                            <p class="text-muted mb-2">Belanja</p>
+                                            <h5 class="mb-0">Rp. {{ number_format($belanja, 0, ',', '.') }}</h5>
+                                        </div>
+                                        <div class="icons-lg ml-2 align-self-center">
+                                            <i class="uim uim-box"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="col-xl-8">
@@ -241,7 +238,7 @@
     <script src="{{ asset('assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
 
     <!-- Datatable init js -->
-    <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script> --}}
     <script>
         $(document).ready(function () {
             loaddata();

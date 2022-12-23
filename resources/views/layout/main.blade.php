@@ -15,7 +15,7 @@
         <link href="{{ asset('assets/libs/air-datepicker/css/datepicker.min.css') }}" rel="stylesheet" type="text/css" />
 
         <!-- jvectormap -->
-        <link href="{{ asset('assets/libs/jqvmap/jqvmap.min.css') }}" rel="stylesheet" />
+        {{-- <link href="{{ asset('assets/libs/jqvmap/jqvmap.min.css') }}" rel="stylesheet" /> --}}
 
         <!-- Bootstrap Css -->
         <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
@@ -134,13 +134,13 @@
         <script src="{{ asset('assets/libs/air-datepicker/js/i18n/datepicker.en.js') }}"></script>
 
         <!-- apexcharts -->
-        <script src="{{ asset('assets/libs/apexcharts/apexcharts.min.js') }}"></script>
+        {{-- <script src="{{ asset('assets/libs/apexcharts/apexcharts.min.js') }}"></script> --}}
 
         <script src="{{ asset('assets/libs/jquery-knob/jquery.knob.min.js') }}"></script> 
 
         <!-- Jq vector map -->
-        <script src="{{ asset('assets/libs/jqvmap/jquery.vmap.min.js') }}"></script>
-        <script src="{{ asset('assets/libs/jqvmap/maps/jquery.vmap.usa.js') }}"></script>
+        {{-- <script src="{{ asset('assets/libs/jqvmap/jquery.vmap.min.js') }}"></script> --}}
+        {{-- <script src="{{ asset('assets/libs/jqvmap/maps/jquery.vmap.usa.js') }}"></script> --}}
 
         <script src="{{ asset('assets/js/pages/dashboard.init.js') }}"></script>
 
